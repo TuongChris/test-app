@@ -18,9 +18,10 @@ function App() {
   };
   return (
     <div className="app">
-      <UsedAppContext.Provider value={hasClaimed}>
+      {/* <UsedAppContext.Provider value={hasClaimed}>
         {hasClaimed ? <HomePage /> : <IntroductionPage onClaim={handleClaim} />}
-      </UsedAppContext.Provider>
+      </UsedAppContext.Provider> */}
+      <h1>hi</h1>
       {/* <IntroductionPage onClaim={handleClaim} /> */}
     </div>
   );
