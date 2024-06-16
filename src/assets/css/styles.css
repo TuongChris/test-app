@@ -1,0 +1,1190 @@
+.fl_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.fl_col {
+  display: flex;
+  flex-direction: column;
+}
+.text_uppercase {
+  text-transform: uppercase;
+}
+.btn_yel {
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background: #b8860b;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* miner page  */
+.main_page {
+  width: inherit;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(180deg, #472da3 0%, #1d0a55 71.3%);
+}
+.img_daimond_mini {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background: #130a34;
+  border-radius: 50px;
+  z-index: 99;
+}
+.page_welcome_reward_number {
+  position: relative;
+  left: -10px;
+  font-family: "Bungee";
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background: #130a34;
+  padding: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 0px 38.18px 38.18px 0px;
+  text-shadow: 2px 2px #000000;
+}
+.btn_nav_text {
+  text-shadow: 2px 2px #000000;
+  font-weight: 400;
+  font-family: "Bungee";
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.main_page .header {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.username_text {
+  font-family: "Baloo Tammudu 2";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #ffffff;
+}
+.icon_gem {
+  font-size: 30px;
+  margin-right: 5px;
+}
+.last_claimed_text {
+  margin-top: 2%;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+.las_claimed_reward {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.last_claimed_number {
+  color: #41f0ff;
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.05em;
+  text-align: left;
+}
+.tab_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15%;
+  padding: 10px;
+  background: linear-gradient(180deg, #4c2fe3 0%, #2a1a7d 100%);
+  border-radius: 30px 30px 0px 0px;
+  border: 1px solid rgba(102, 102, 102, 0);
+}
+.tab_box .tab_btn {
+  background: linear-gradient(180deg, #e4adff 14.52%, #d590fd 74.19%);
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 11.08px;
+  box-shadow: 2px 5px #000000;
+  border: 3px solid #000000;
+  font-family: "Bungee";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 3px 3px #000000;
+  padding: 20px 5px;
+}
+.tab_box .tab_btn.active {
+  background: linear-gradient(180deg, #ffdc02 14.52%, #ffbb00 74.19%);
+}
+
+.content_box {
+  height: 70%;
+}
+.content_box .content {
+  display: none;
+  position: relative;
+  height: 100%;
+  animation: moving 0.5s ease;
+  padding: 0 0 7% 0;
+}
+.content_box .content.active {
+  display: block;
+}
+
+/* miner */
+.miner_icon {
+  padding-top: 6px;
+}
+.miner_icon_text {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: #ffffff;
+}
+.miner_icon_ctn {
+  width: 51px;
+  height: 51px;
+  background: linear-gradient(180deg, #6f00ff 0%, #b71fff 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.miner_mid_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5%;
+}
+.miner_mid_ctn {
+  width: 60%;
+  background: radial-gradient(
+    63.47% 62.26% at 50% 36.46%,
+    rgba(125, 89, 255, 0.8) 0%,
+    rgba(62, 23, 208, 0.8) 100%
+  );
+  border-radius: 26.31px;
+}
+
+.miner_text_ctn {
+  background: linear-gradient(180deg, #684bff 0%, #291785 100%);
+  border-radius: 26.31px 26.31px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  border-bottom: 1px solid #d9d9d9;
+  box-shadow: 0px 3px 6px 0px rgba(202, 138, 255, 0.2) inset;
+}
+.miner_text {
+  text-align: center;
+  font-family: "Baloo Tammudu 2";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  text-transform: uppercase;
+}
+.miner_current_mining {
+  font-family: "Bungee";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  color: #ffe638;
+  text-shadow: 3px 3px #000000;
+}
+.miner_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  position: absolute;
+  width: 100%;
+}
+.miner_top_icon_event {
+  position: absolute;
+  left: 20px;
+}
+.icon_miner {
+  background: #f0f8ff;
+  padding: 10px;
+  color: black;
+  font-size: 28px;
+  border-radius: 5px;
+}
+.icon_miner_group {
+  position: absolute;
+  right: 20px;
+}
+.miner_mid {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+.miner_mid_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #130a34;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: left;
+}
+.miner_mid_text {
+  font-family: "Baloo Tamma 2";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  min-width: 65px;
+  line-height: 16px;
+}
+.miner_mid_number {
+  font-family: "Bungee";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #41f0ff;
+  text-align: left;
+}
+.miner_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  min-width: 196px;
+  background: #130a34;
+  border-radius: 25px;
+  border: none;
+  position: relative;
+  padding: 5px 0;
+  padding-right: 20px;
+}
+.miner_btn_img {
+  position: absolute;
+  left: 0;
+}
+.miner_btn_text {
+  font-family: "Bungee";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-shadow: 2px 2px #000000;
+  color: #f5cffe;
+  letter-spacing: 0.01em;
+}
+.miner_btn_claim {
+  background: linear-gradient(180deg, #5cfa00 14.52%, #399900 74.19%);
+  border-radius: 8px;
+  padding: 10px 30px;
+  box-shadow: 0 5px #399900;
+  border: 3px solid #f7fff7;
+}
+.miner_btn_claim_text {
+  font-family: "Bungee";
+  font-size: 20.25px;
+  font-weight: 400;
+  line-height: 20.25px;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+}
+.mining_truck_img_ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.mining_truck_img {
+  width: 146.51px;
+  height: 131.98px;
+}
+
+@keyframes moving {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* event page*/
+.event_content {
+  border-radius: 50px 50px 0px 0px;
+  background: linear-gradient(180deg, #4c2fe3 0%, #2a1a7d 100%);
+  height: 100%;
+  position: fixed;
+  bottom: -200%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  transition: bottom 0.3s ease;
+  padding: 20px;
+  z-index: 100;
+  width: 100%;
+  max-width: 500px;
+  padding-top: 30px;
+}
+.event_content.show {
+  bottom: -14%;
+}
+.event_medal_icon {
+  width: 26px;
+  height: 34px;
+}
+.avatar_user {
+  width: 38px;
+  height: 38px;
+}
+.top_user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0 10px 0;
+}
+.btn_close {
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  padding: 5px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+}
+.envent_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.btn_envent_top {
+  margin-right: 5px;
+  min-width: 70px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  background: linear-gradient(180deg, #e4adff 14.52%, #d590fd 74.19%);
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-shadow: 0 5px #000000;
+  border: 3px solid #ffffff;
+  font-family: "Bungee";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: #ffffff;
+}
+.btn_envent_top.active {
+  background: linear-gradient(180deg, #9747ff 0%, #6f00ff 100%);
+}
+.event_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  margin: 10px 0;
+  margin-top: 20px;
+}
+.event_title_h2 {
+  font-family: "Baloo Tamma 2";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.event_title_text {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #ffffff;
+}
+.event_rank {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.top_user {
+  background: #f0f8ff;
+  border-radius: 5px;
+}
+.top_user_username {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #130a34;
+  text-transform: uppercase;
+  min-width: 30%;
+}
+.top_user_profit {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: #130a34;
+}
+.top_user_usdt {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: -0.05em;
+  text-align: right;
+  color: #ff6915;
+}
+.event_rank_user {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  margin-top: 20px;
+  color: #ffffff;
+}
+.event_bottom {
+  text-align: center;
+  margin-top: 30px;
+}
+.event_bottom_h3 {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+.event_bottom_text {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  color: #ffdc02;
+  margin-top: 10px;
+}
+
+/* boost page  */
+.boost_content.active {
+  display: block;
+}
+.boost_container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 5px;
+}
+.boost_title {
+  font-family: "Baloo Tamma 2";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.boost_title_span {
+  color: #41f0ff;
+}
+.boost_ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(19, 10, 52, 1);
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 2px solid #ffe9ff;
+  border-radius: 16px;
+  margin-bottom: 2%;
+}
+.boost_ctn_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.boost_ctn_mid {
+  text-align: left;
+}
+.boost_icon {
+  font-size: 50px;
+}
+.boost_ctn_item {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Bungee";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #41f0ff;
+}
+.boost_ctn_number {
+  font-family: "Baloo Tamma 2";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.05em;
+  color: #dbdbdb;
+}
+.boost_ctn_after {
+  font-family: "Baloo Tamma 2";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -0.05em;
+  color: #d391fd;
+}
+.second_boost_ctn {
+  margin-top: 10%;
+}
+.boost_icon_chevron {
+  color: #ffffff;
+  font-size: 24px;
+}
+.boost_container_ctn {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+.boost_container_ctn.show {
+  display: block;
+  padding-top: 5%;
+}
+
+/* upgrade_boost */
+.upgrade_boost {
+  border-radius: 50px 50px 0px 0px;
+  background: linear-gradient(180deg, #4c2fe3 0%, #2a1a7d 100%);
+  height: 100%;
+  position: fixed;
+  bottom: -200%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  transition: bottom 0.3s ease;
+  padding: 20px;
+  z-index: 100;
+  width: 100%;
+  max-width: 500px;
+}
+.upgrade_boost.show {
+  bottom: -14%;
+}
+.upgrade_boost_btn {
+  position: absolute;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  top: -15px;
+  right: 30px;
+}
+.upgrade_boost_container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.upgrade_boost_ctn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(45, 28, 107, 1);
+  border: 2px solid #ffe9ff;
+  border-radius: 16px;
+  padding: 10px;
+  padding-left: 20px;
+  gap: 5px;
+  margin-bottom: 5%;
+}
+.upgrade_boost_daimond_icon {
+  width: 30px;
+  height: 30px;
+}
+.upgrade_boost_title {
+  font-family: "Bungee";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+.upgrade_boost_title_number {
+  font-family: "Bungee";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+.upgrade_boost_des {
+  font-family: "Baloo Tamma 2";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: #ffffff;
+}
+.upgrade_boost_chart {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15%;
+}
+.upgrade_boost_chart_ctn {
+  background: #0066ff;
+  border-radius: 16px;
+  border: 2px solid #ffe9ff;
+  position: relative;
+  padding: 20px 10px;
+}
+.upgrade_boost_chart_ctn_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.upgrade_boost_claimed {
+  position: absolute;
+  right: 10px;
+  bottom: -30px;
+}
+.upgrade_boost_claimed_btn {
+  background: linear-gradient(180deg, #5cfa00 14.52%, #399900 74.19%);
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0 5px #399900;
+  border: 3px solid #f7fff7;
+}
+.upgrade_boost_claimed_btn_text {
+  font-family: "Bungee";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+}
+.upgrade_boost_chart_img_item {
+  display: flex;
+  justify-content: center;
+}
+.upgrade_boost_chart_img {
+  width: 239px;
+  height: 144px;
+}
+.upgrade_boost_bot {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+.upgrade_boost_bot_title_ctn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+.upgrade_boost_bot_title {
+  font-family: "Baloo Tammudu 2";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.upgrade_boost_bot_img {
+  width: 20px;
+  height: 20px;
+}
+.upgrade_boost_bot_des {
+  text-align: center;
+  font-family: "Baloo Tamma 2";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.05em;
+  color: #dbdbdb;
+  text-transform: uppercase;
+}
+.upgrade_boost_bot_text {
+  font-family: "Baloo Tammudu 2";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+.upgrade_boost_upgrade_btn {
+  background: linear-gradient(180deg, #ffdc02 14.52%, #ffbb00 74.19%);
+  border-radius: 11.08px;
+  padding: 20px;
+  font-family: "Bungee";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 3px 3px #000000;
+  text-transform: uppercase;
+  box-shadow: 0 3px #000000;
+  border: 3px solid #000000;
+}
+.offer_icon_img {
+  width: 12px;
+  height: 12px;
+  padding-top: 3px;
+  margin-left: 1%;
+}
+.offer_ctn {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* join community  */
+.join_community {
+  justify-content: center;
+  display: none;
+  border-radius: 50px 50px 0px 0px;
+  background: linear-gradient(180deg, #4c2fe3 0%, #2a1a7d 100%);
+  height: 100%;
+  position: fixed;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  transition: bottom 0.3s ease;
+  padding: 20px;
+  padding-top: 30px;
+  z-index: 100;
+  top: 15%;
+  bottom: -100%;
+  width: 100%;
+  max-width: 500px;
+}
+.join_community.show {
+  display: block;
+}
+.join_community_btn {
+  position: absolute;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  top: -15px;
+  right: 30px;
+}
+.join_community_ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10%;
+}
+.join_community_ctn_item {
+  padding: 4px 12px 4px 12px;
+  border-radius: 10px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.join_community_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.join_community_daimond_img {
+  width: 25px;
+  height: 25px;
+}
+.join_community_name {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.join_community_ctn_item2 {
+  padding: 4px 12px 4px 12px;
+  border-radius: 10px;
+  background: #bababa;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.join_community_title {
+  font-family: "Baloo Tamma 2";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.join_community_name_blur {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: -0.05em;
+  text-align: right;
+}
+.join_community_bot_text {
+  font-family: "Baloo Tamma 2";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: #dbdbdb;
+  text-transform: uppercase;
+  margin-bottom: 1%;
+}
+
+/* daily  */
+.daily_container {
+  border-radius: 50px 50px 0px 0px;
+  background: linear-gradient(180deg, #4c2fe3 0%, #2a1a7d 100%);
+  height: 100%;
+  position: fixed;
+  bottom: -200%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  transition: bottom 0.3s ease;
+  padding: 20px;
+  z-index: 100;
+  width: 100%;
+  max-width: 500px;
+}
+.daily_container.show {
+  bottom: -14%;
+}
+.daily_box {
+  background: #2d1c6b;
+  border-radius: 16px;
+  border: 2px solid #ffe9ff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.daily_box_day {
+  font-family: "Bungee";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #41f0ff;
+}
+.daily_box_img {
+  width: 35px;
+  height: 35px;
+}
+.daily_box_number {
+  font-family: "Bungee";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+}
+.daily_bot_title {
+  font-family: "Baloo Tammudu 2";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 1%;
+}
+.daily_bot_text {
+  font-family: "Baloo Tamma 2";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #dbdbdb;
+  margin-bottom: 5%;
+}
+.daily_bot_time {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* rank  */
+.rank_container {
+  border-radius: 50px 50px 0px 0px;
+  background: linear-gradient(180deg, #4c2fe3 0%, #2a1a7d 100%);
+  height: 100%;
+  position: fixed;
+  bottom: -200%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  transition: bottom 0.3s ease;
+  padding: 20px;
+  z-index: 100;
+  padding-top: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+.rank_container.show {
+  bottom: -14%;
+}
+.rank_ctn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.rank_ctn_top {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+}
+.rank_ctn_title {
+  font-family: "Baloo Tamma 2";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 2%;
+}
+.rank_ctn_text {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+.rank_ctn_btn {
+  background: linear-gradient(180deg, #9747ff 0%, #6f00ff 100%);
+  border-radius: 8px;
+  padding: 10px 30px;
+  box-shadow: 0 5px #000000;
+  border: 3px solid #f7fff7;
+  font-family: "Bungee";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.06em;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 3px 3px #000000;
+}
+.rank_total_view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+}
+.rank_total {
+  font-family: "Baloo Tamma 2";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+.rank_total_number {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+.rank_bot_btn {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3%;
+  padding: 0 20px;
+}
+.rank_bot_btn_left {
+  background: #130a34;
+  border-radius: 8px;
+  border: 2px solid #d391fd;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+.rank_bot_btn_left_icon {
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+}
+.rank_bot_btn_invite {
+  text-shadow: 1px 1px #000000;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: "Bungee";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #ffdc02 14.52%, #ffbb00 74.19%);
+  box-shadow: 0 3px #000000;
+  min-width: 70%;
+}
+
+/* area  */
+.area_global_container {
+  border-radius: 50px 50px 0px 0px;
+  background: linear-gradient(180deg, #4c2fe3 0%, #2a1a7d 100%);
+  height: 100%;
+  position: fixed;
+  bottom: -200%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  transition: bottom 0.3s ease;
+  padding: 20px;
+  z-index: 100;
+  padding-top: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+.area_global_container.show {
+  bottom: -14%;
+}
+.area_content_box {
+  height: 70%;
+}
+.area_content_box .area_content {
+  display: none;
+  position: relative;
+  height: 100%;
+  animation: moving 0.5s ease;
+  padding: 0 0 10% 0;
+}
+.area_content_box .area_content.active {
+  display: block;
+}
+.area_tab_btn_ctn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+.area_tab_btn {
+  background: linear-gradient(180deg, #9747ff 0%, #6f00ff 100%);
+  border-radius: 6px;
+  border: 1px solid #000000;
+  box-shadow: 3px 3px #000000;
+  width: 30%;
+  font-family: "Bungee";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.06em;
+  text-align: center;
+  padding: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #000000;
+}
+.area_tab_btn.active {
+  background: linear-gradient(180deg, #e4adff 14.52%, #d590fd 74.19%);
+}
+.area_content_ctn {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.area_content_ctn_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3%;
+}
+.area_content_title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+.area_content_title_h2 {
+  font-family: "Baloo Tamma 2";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.area_content_title_h3 {
+  font-family: "Baloo Tamma 2";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #ffffff;
+}
